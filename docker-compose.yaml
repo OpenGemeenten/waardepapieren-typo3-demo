@@ -24,7 +24,7 @@ services:
     volumes:
       - "$SSH_AUTH_SOCK:/ssh-agent"
       - "~/.composer:/opt/local/composer"
-      - "./Build/docker/php-fpm-pool.conf:/etc/php/7.3/fpm/pool.d/www.conf:ro"
+      - "./Build/docker/php-fpm-pool.conf:/etc/php/7.3/fpm/template-www.conf:rw"
       - "./:/var/www"
     entrypoint: "/opt/local/entrypoints/entrypoint-fpm.sh"
     environment:

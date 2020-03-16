@@ -20,3 +20,5 @@ if [ "${userExists}" == "" ]; then
       --system \
       docker
 fi
+
+groupName=$(getent group ${LOCAL_GROUP_ID} | cut -d: -f1)
