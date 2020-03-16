@@ -1,0 +1,9 @@
+.DS_Store
+.idea
+/var
+/vendor
+/Web/*
+!/Web/typo3conf
+/Web/typo3conf/*
+!/Web/typo3conf/LocalConfiguration.php
+!/Web/typo3conf/AdditionalConfiguration.php
