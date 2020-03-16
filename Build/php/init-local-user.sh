@@ -21,4 +21,5 @@ if [ "${userExists}" == "" ]; then
       docker
 fi
 
-groupName=$(getent group ${LOCAL_GROUP_ID} | cut -d: -f1)
+export LOCAL_GROUP_NAME=$(getent group 1000 | cut -d: -f1)
+GROUP_NAME=${LOCAL_GROUP_NAME} envsubst < /etc/php/7.3/fpm/template-www.conf > /etc/php/7.3/fpm/pool.d/www.conf
