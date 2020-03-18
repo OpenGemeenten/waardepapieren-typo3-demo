@@ -1,0 +1,16 @@
+components.opengemeentennldesignsystem_footer =< lib.contentElement
+components.opengemeentennldesignsystem_footer {
+    templateName = OpenGemeentenNlDesignSystem-Footer
+
+    templateRootPaths {
+        1584525229 = {$extensions.nl_design_system.paths.components.templateRootPath}
+    }
+
+    partialRootPaths {
+        1584525229 = {$extensions.nl_design_system.paths.components.partialRootPath}
+    }
+
+    layoutRootPaths {
+        1584525229 = {$extensions.nl_design_system.paths.components.layoutRootPath}
+    }
+}

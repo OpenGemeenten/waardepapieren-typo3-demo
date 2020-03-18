@@ -1,0 +1,45 @@
+<html
+        xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+        xmlns:discipl="http://typo3.org/ns/Discipl/Site/ViewHelpers"
+        data-namespace-typo3-fluid="true"
+>
+
+<discipl:pageRenderer.addCss
+        file="{f:uri.resource(path: 'uno/components/lists/lists.css', extensionName: 'nl_design_system')}"
+/>
+<discipl:pageRenderer.addCss
+        file="{f:uri.resource(path: 'uno/components/footer/footer.css', extensionName: 'nl_design_system')}"
+/>
+
+<footer class="footer">
+    <div class="footer__content background--hemelblauw">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4">
+                    <span class="footer__header">NL Design System 0.1.1</span>
+
+                    <ul class="list list--links footer__nav">
+                        <li><a href="../../upgrade/index.html">Upgraden</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-4">
+                    <span class="footer__header">Bijdragen</span>
+                    <ul class="list list--links footer__nav">
+                        <li><a rel="external" href="https://gitlab.com/nl-design-system/nl-design-system">GitLab</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-4">
+                    <span class="footer__header">Contact</span>
+                    <ul class="list list--links footer__nav">
+                        <li><a href="">Stuur een e-mail</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>

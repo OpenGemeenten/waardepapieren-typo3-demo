@@ -1,0 +1,19 @@
+extensions.nl_design_system {
+    paths {
+        components {
+            templateRootPath = EXT:nl_design_system/Resources/Private/Templates/Components/
+
+            layoutRootPath = EXT:nl_design_system/Resources/Private/Layouts/Components/
+
+            partialRootPath = EXT:nl_design_system/Resources/Private/Partials/Components/
+        }
+
+        documentTypes {
+            templateRootPath = EXT:nl_design_system/Resources/Private/Templates/DocumentTypes/
+
+            layoutRootPath = EXT:nl_design_system/Resources/Private/Layouts/DocumentTypes/
+
+            partialRootPath = EXT:nl_design_system/Resources/Private/Partials/DocumentTypes/
+        }
+    }
+}

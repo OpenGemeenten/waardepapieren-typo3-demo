@@ -1,0 +1,25 @@
+{
+    "name": "opengemeenten/typo3-cms-nl-design-system",
+    "type": "typo3-cms-extension",
+    "description": "Templates, components and CSS using NL Design System",
+    "license": "GPL-3.0+",
+    "replace": {
+        "nl_design_system": "self.version"
+    },
+    "authors": [
+        {
+            "name": "SimplyAdmire",
+            "email": "support@simplyadmire.com",
+            "homepage": "simplyadmire.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.3",
+        "typo3/minimal": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "OpenGemeenten\\NlDesignSystem\\": "Classes"
+        }
+    }
+}

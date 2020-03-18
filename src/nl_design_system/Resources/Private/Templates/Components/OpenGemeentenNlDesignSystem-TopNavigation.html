@@ -1,0 +1,48 @@
+<html
+        xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+        xmlns:discipl="http://typo3.org/ns/Discipl/Site/ViewHelpers"
+        data-namespace-typo3-fluid="true"
+>
+
+<discipl:pageRenderer.addCss
+        file="{f:uri.resource(path: 'uno/components/navigation/navigation.css', extensionName: 'nl_design_system')}"
+/>
+
+<nav class="top-nav" id="docs-nav">
+    <div class="container">
+        <div class="top-nav__block top-nav-autoresize">
+            <ul class="nav">
+                <li class="nav__item">
+                    <a href="/" title="Home" class="nav__link  ">
+                        <i class="icon icon-home" role="presentation"></i>
+                        <span>
+                            NL Design System
+                        </span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link " href="#">
+                        Aan de slag
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link " href="#">
+                        Basis
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link " href="#">
+                        Componenten
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link nav__link--active" href="#">
+                        Voorbeelden
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</html>

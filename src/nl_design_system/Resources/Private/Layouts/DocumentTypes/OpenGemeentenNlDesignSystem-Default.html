@@ -1,0 +1,24 @@
+<html
+        xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+        xmlns:discipl="http://typo3.org/ns/Discipl/Site/ViewHelpers"
+        data-namespace-typo3-fluid="true"
+>
+
+<discipl:pageRenderer.addCssLibrary
+        file="{f:uri.resource(path: 'uno/core/base.css', extensionName: 'nl_design_system')}"
+        forceOnTop="1"
+/>
+<discipl:pageRenderer.addCssLibrary
+        file="{f:uri.resource(path: 'uno/core/grid.css', extensionName: 'nl_design_system')}"
+
+/>
+
+<div class="wrapper">
+    {opengemeentennldesignsystem_skipLink -> f:format.raw()}
+    {opengemeentennldesignsystem_header -> f:format.raw()}
+    {opengemeentennldesignsystem_topNavigation -> f:format.raw()}
+    <f:render section="Content"/>
+    {opengemeentennldesignsystem_footer -> f:format.raw()}
+</div>
+
+</html>
