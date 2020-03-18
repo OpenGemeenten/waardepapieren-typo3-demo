@@ -95,7 +95,7 @@ TCEFORM {
                 waardepapieren_form.disabled = 1
             }
         }
-        
+
         subheader {
             types {
                 waardepapieren_form.disabled = 1
