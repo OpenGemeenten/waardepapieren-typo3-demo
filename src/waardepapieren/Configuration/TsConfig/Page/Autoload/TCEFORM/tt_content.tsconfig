@@ -18,6 +18,24 @@ TCEFORM {
             }
         }
 
+        date {
+            types {
+                waardepapieren_form.disabled = 1
+            }
+        }
+
+        header_link {
+            types {
+                waardepapieren_form.disabled = 1
+            }
+        }
+
+        header_position {
+            types {
+                waardepapieren_form.disabled = 1
+            }
+        }
+
         frame_class {
             types {
                 waardepapieren_form.disabled = 1
@@ -73,6 +91,12 @@ TCEFORM {
         }
 
         space_before_class {
+            types {
+                waardepapieren_form.disabled = 1
+            }
+        }
+        
+        subheader {
             types {
                 waardepapieren_form.disabled = 1
             }
