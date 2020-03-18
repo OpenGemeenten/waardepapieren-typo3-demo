@@ -7,9 +7,9 @@
 <f:layout name="Default" />
 
 <f:section name="Main">
-    <discipl:pageRenderer.addJsFooterFile file="/static/js/2.962d2ab1.chunk.js" />
-    <discipl:pageRenderer.addJsFooterFile file="/static/js/main.0eafbfab.chunk.js" />
-    <discipl:pageRenderer.addJsFooterFile file="/static/js/inline.js" />
+    <discipl:pageRenderer.addJsFooterFile
+            file="{f:uri.resource(path: 'Javascript/main.a965d287.js', extensionName: 'waardepapieren')}"
+    />
 
     <discipl:pageRenderer.addCss
             file="{f:uri.resource(path: 'uno/components/form/form.css', extensionName: 'nl_design_system')}"
@@ -24,6 +24,9 @@
             file="{f:uri.resource(path: 'uno/components/button/button.css', extensionName: 'nl_design_system')}"
     />
 
+    <script>
+        window.waardepapierenConfigUrl = '{f:uri.resource(path: 'Configuration/clerk-frontend-config.json', extensionName: 'waardepapieren')}';
+    </script>
     <div id="root"></div>
 </f:section>
 
