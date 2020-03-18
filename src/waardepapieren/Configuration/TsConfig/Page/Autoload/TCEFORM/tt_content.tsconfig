@@ -1,0 +1,87 @@
+TCEFORM {
+    tt_content {
+        assets {
+            types {
+                waardepapieren_form.disabled = 1
+            }
+        }
+
+        bodytext {
+            types {
+                waardepapieren_form.disabled = 1
+            }
+        }
+
+        categories {
+            types {
+                waardepapieren_form.disabled = 1
+            }
+        }
+
+        frame_class {
+            types {
+                waardepapieren_form.disabled = 1
+            }
+        }
+
+        imageborder {
+            types {
+                waardepapieren_form.disabled = 1
+            }
+        }
+
+        imagecols {
+            types {
+                waardepapieren_form.disabled = 1
+            }
+        }
+
+        imageheight {
+            types {
+                waardepapieren_form.disabled = 1
+            }
+        }
+
+        imageorient {
+            types {
+                waardepapieren_form.disabled = 1
+            }
+        }
+
+        imagewidth {
+            types {
+                waardepapieren_form.disabled = 1
+            }
+        }
+
+        image_zoom {
+            types {
+                waardepapieren_form.disabled = 1
+            }
+        }
+
+        layout {
+            types {
+                waardepapieren_form.disabled = 1
+            }
+        }
+
+        space_after_class {
+            types {
+                waardepapieren_form.disabled = 1
+            }
+        }
+
+        space_before_class {
+            types {
+                waardepapieren_form.disabled = 1
+            }
+        }
+
+        sys_language_uid {
+            types {
+                waardepapieren_form.disabled = 1
+            }
+        }
+    }
+}

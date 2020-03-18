@@ -1,0 +1,25 @@
+{
+    "name": "discipl/site",
+    "type": "typo3-cms-extension",
+    "description": "Basic configuration and helpers for a website",
+    "license": "GPL-3.0+",
+    "replace": {
+        "site": "self.version"
+    },
+    "authors": [
+        {
+            "name": "SimplyAdmire",
+            "email": "support@simplyadmire.com",
+            "homepage": "simplyadmire.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.3",
+        "typo3/minimal": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Discipl\\Site\\": "Classes"
+        }
+    }
+}

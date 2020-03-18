@@ -45,7 +45,9 @@
 		"typo3/cms-sys-note": "^9.5",
 		"typo3/cms-t3editor": "^9.5",
 		"typo3/cms-tstemplate": "^9.5",
-		"typo3/cms-viewpage": "^9.5"
+		"typo3/cms-viewpage": "^9.5",
+		"discipl/site": "@dev",
+		"discipl/waardepapieren": "@dev"
 	},
 	"scripts":{
 		"typo3-cms-scripts": [

@@ -1,0 +1,9 @@
+config {
+    concatenateJs = 0
+    removeDefaultJS = 1
+
+    additionalHeaders {
+        10.header = Access-Control-Allow-Origin: *
+        20.header = Access-Control-Allow-Headers: *
+    }
+}

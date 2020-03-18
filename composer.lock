@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e190fdcab92e1ed7d05d02587b1df763",
+    "content-hash": "36546ccd2bbaf52999186f42e0389b62",
     "packages": [
         {
             "name": "algo26-matthias/idna-convert",
@@ -105,6 +105,74 @@
                 "text"
             ],
             "time": "2014-05-19T10:25:02+00:00"
+        },
+        {
+            "name": "discipl/site",
+            "version": "9999999-dev",
+            "dist": {
+                "type": "path",
+                "url": "src/site",
+                "reference": "f21848ac90bdeec2644ab787b6c23704fa600bd0",
+                "shasum": null
+            },
+            "require": {
+                "php": ">=7.3",
+                "typo3/minimal": "^9.5"
+            },
+            "replace": {
+                "site": "self.version"
+            },
+            "type": "typo3-cms-extension",
+            "autoload": {
+                "psr-4": {
+                    "Discipl\\Site\\": "Classes"
+                }
+            },
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "SimplyAdmire",
+                    "email": "support@simplyadmire.com",
+                    "homepage": "simplyadmire.com"
+                }
+            ],
+            "description": "Basic configuration and helpers for a website"
+        },
+        {
+            "name": "discipl/waardepapieren",
+            "version": "9999999-dev",
+            "dist": {
+                "type": "path",
+                "url": "src/waardepapieren",
+                "reference": "f092b6b411f0d041f77239b93d30f541fa571284",
+                "shasum": null
+            },
+            "require": {
+                "php": ">=7.3",
+                "typo3/minimal": "^9.5"
+            },
+            "replace": {
+                "waardepapieren": "self.version"
+            },
+            "type": "typo3-cms-extension",
+            "autoload": {
+                "psr-4": {
+                    "Discipl\\Waardepapieren\\": "Classes"
+                }
+            },
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "SimplyAdmire",
+                    "email": "support@simplyadmire.com",
+                    "homepage": "simplyadmire.com"
+                }
+            ],
+            "description": "Content element for the waardepapieren app"
         },
         {
             "name": "doctrine/annotations",
@@ -4370,7 +4438,10 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "discipl/site": 20,
+        "discipl/waardepapieren": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],

@@ -1,0 +1,11 @@
+extensions.site {
+    paths {
+        documentTypes {
+            templateRootPath = EXT:site/Resources/Private/Templates/DocumentTypes/
+
+            layoutRootPath = EXT:site/Resources/Private/Layouts/DocumentTypes/
+
+            partialRootPath = EXT:site/Resources/Private/Partials/DocumentTypes/
+        }
+    }
+}

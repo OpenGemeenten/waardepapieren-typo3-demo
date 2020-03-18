@@ -1,0 +1,26 @@
+// The default column definition. Adds register settings for image width and wraps content with search comments
+lib.column.default = COA
+lib.column.default {
+    // Processing of columns is defined on document type
+    if {
+        value := addToList()
+        isInList.field = doktype
+    }
+
+    10 = LOAD_REGISTER
+    10 {
+        maxImageWidthInText =< temp.column.maxImageWidthInText
+        maxImageWidth =< temp.column.width
+    }
+
+    20 = CONTENT
+    20 {
+        table = tt_content
+        select {
+            orderBy = sorting
+            where = colPos=0
+        }
+    }
+
+    30 = RESTORE_REGISTER
+}

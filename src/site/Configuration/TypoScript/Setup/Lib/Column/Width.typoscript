@@ -1,0 +1,30 @@
+// Helper TypoScript to define the column width depending on the backend layout
+temp.column.maxImageWidthInText = TEXT
+temp.column.maxImageWidthInText {
+    cObject = CASE
+    cObject {
+        key {
+            data = levelfield:-2,backend_layout_next_level,slide
+            override.field = backend_layout
+            split {
+                token = pagets__
+                1.current = 1
+                1.wrap = |
+            }
+        }
+
+        Default = TEXT
+        Default {
+            value = 300
+        }
+    }
+}
+
+temp.column.maxImageWidth =< temp.column.maxImageWidthInText
+temp.column.maxImageWidth {
+    cObject {
+        Default {
+            value = 908
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "name": "discipl/waardepapieren",
+    "type": "typo3-cms-extension",
+    "description": "Content element for the waardepapieren app",
+    "license": "GPL-3.0+",
+    "replace": {
+        "waardepapieren": "self.version"
+    },
+    "authors": [
+        {
+            "name": "SimplyAdmire",
+            "email": "support@simplyadmire.com",
+            "homepage": "simplyadmire.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.3",
+        "typo3/minimal": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Discipl\\Waardepapieren\\": "Classes"
+        }
+    }
+}

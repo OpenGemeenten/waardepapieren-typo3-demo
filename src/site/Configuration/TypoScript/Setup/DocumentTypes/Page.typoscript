@@ -1,0 +1,30 @@
+page = PAGE
+page {
+    typeNum = 0
+
+    1584442976 = FLUIDTEMPLATE
+    1584442976 {
+        templateName = Site-Default
+
+        templateRootPaths {
+            0 = {$extensions.site.paths.documentTypes.templateRootPath}
+        }
+
+        layoutRootPaths {
+            0 = {$extensions.site.paths.documentTypes.layoutRootPath}
+        }
+
+        partialRootPaths {
+            0 = {$extensions.site.paths.documentTypes.partialRootPath}
+        }
+
+        variables {
+            // Content column 0 (add specifically for document types)
+            column-0 =< lib.column.0
+            column-0 {
+                // Document type 1: Standard
+                if.value := addToList(1)
+            }
+        }
+    }
+}

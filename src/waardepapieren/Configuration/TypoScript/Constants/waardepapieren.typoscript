@@ -1,0 +1,11 @@
+extensions.waardepapieren {
+    paths {
+        contentTypes {
+            templateRootPath = EXT:waardepapieren/Resources/Private/Templates/ContentTypes/
+
+            layoutRootPath = EXT:waardepapieren/Resources/Private/Layouts/ContentTypes/
+
+            partialRootPath = EXT:waardepapieren/Resources/Private/Partials/ContentTypes/
+        }
+    }
+}

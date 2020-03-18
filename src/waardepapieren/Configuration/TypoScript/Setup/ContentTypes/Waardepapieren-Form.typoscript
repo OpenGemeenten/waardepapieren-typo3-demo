@@ -1,0 +1,16 @@
+tt_content.waardepapieren_form =< lib.contentElement
+tt_content.waardepapieren_form {
+    templateName = Waardepapieren-Form.html
+
+    templateRootPaths {
+        1584442976 = {$extensions.waardepapieren.paths.contentTypes.templateRootPath}
+    }
+
+    partialRootPaths {
+        1584442976 = {$extensions.waardepapieren.paths.contentTypes.partialRootPath}
+    }
+
+    layoutRootPaths {
+        1584442976 = {$extensions.waardepapieren.paths.contentTypes.layoutRootPath}
+    }
+}
