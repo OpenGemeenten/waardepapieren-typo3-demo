@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "36546ccd2bbaf52999186f42e0389b62",
+    "content-hash": "6f7c9c591e6527a85f03e0009e81de9c",
     "packages": [
         {
             "name": "algo26-matthias/idna-convert",
@@ -1039,6 +1039,40 @@
                 "php"
             ],
             "time": "2019-11-08T13:50:10+00:00"
+        },
+        {
+            "name": "opengemeenten/typo3-cms-nl-design-system",
+            "version": "9999999-dev",
+            "dist": {
+                "type": "path",
+                "url": "src/nl_design_system",
+                "reference": "98648e613a1fe06df57b4823025bb40c9f8872e3",
+                "shasum": null
+            },
+            "require": {
+                "php": ">=7.3",
+                "typo3/minimal": "^9.5"
+            },
+            "replace": {
+                "nl_design_system": "self.version"
+            },
+            "type": "typo3-cms-extension",
+            "autoload": {
+                "psr-4": {
+                    "OpenGemeenten\\NlDesignSystem\\": "Classes"
+                }
+            },
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "SimplyAdmire",
+                    "email": "support@simplyadmire.com",
+                    "homepage": "simplyadmire.com"
+                }
+            ],
+            "description": "Templates, components and CSS using NL Design System"
         },
         {
             "name": "psr/cache",
@@ -4440,7 +4474,8 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "discipl/site": 20,
-        "discipl/waardepapieren": 20
+        "discipl/waardepapieren": 20,
+        "opengemeenten/typo3-cms-nl-design-system": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

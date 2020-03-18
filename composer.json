@@ -47,7 +47,8 @@
 		"typo3/cms-tstemplate": "^9.5",
 		"typo3/cms-viewpage": "^9.5",
 		"discipl/site": "@dev",
-		"discipl/waardepapieren": "@dev"
+		"discipl/waardepapieren": "@dev",
+		"opengemeenten/typo3-cms-nl-design-system": "@dev"
 	},
 	"scripts":{
 		"typo3-cms-scripts": [
