@@ -1,58 +1,29 @@
-# TYPO3 CMS Base Distribution
+# TYPO3 CMS Waardepapieren Clerk frontend Distribution
 
 Get going quickly with TYPO3 CMS.
 
 ## Prerequisites
-
 * PHP 7.3
 * [Composer](https://getcomposer.org/download/)
 
+### Waardepapieren
+* Get Waardepapieren at `https://github.com/discipl/waardepapieren`
+* `docker-compose -f docker-compose-travis.yml up`
+
 ## Quickstart
+* `cd [this-directory]`
+* `composer install`
+* `bin/start-environment.sh`
+* At `Do you want to restore the database from previous dump? y/N` enter `y`
 
-* `composer create-project typo3/cms-base-distribution project-name ^9`
-* `cd project-name`
+## Webservers
+* Waardepapieren: `https://localhost`
+* TYPO3: `https://localhost:8090`
 
-**Setup:**
-
-To start an interactive installation, you can do so by executing the following
-command and then follow the wizard:
-
-```
-php vendor/bin/typo3cms install:setup
-```
-
-**Setup unattended (optional):**
-
-If you're a more advanced user, you might want to leverage the unattended installation.
-To do this, you need to execute the following command and substite the arguments
-with your own environment configuration.
-
-```
-php vendor/bin/typo3cms install:setup \
-    --non-interactive \
-    --database-user-name=typo3 \
-    --database-user-password=typo3 \
-    --database-host-name=127.0.0.1 \
-    --database-port=3306 \
-    --database-name=typo3 \
-    --use-existing-database \
-    --admin-user-name=admin \
-    --admin-password=password \
-    --site-setup-type=site
-```
-
-**Development server:**
-
-While it's advised to use a more sophisticated web server such as
-Apache 2 or nginx, you can instantly run the project by using PHPs` built-in
-[web server](http://php.net/manual/en/features.commandline.webserver.php).
-
-* `TYPO3_CONTEXT=Development php -S localhost:8000 -t public`
-* open your browser at "http://localhost:8000"
-
-Please be aware that the built-in web server is single threaded. Which is ultimately
-a performance killer and may result in deadlocks if you execute too many requests at once.
+### TYPO3 backend
+* `https://localhost:8090/typo3`
+* username: `app`
+* password: `password`
 
 # License
-
 GPL-2.0 or later
