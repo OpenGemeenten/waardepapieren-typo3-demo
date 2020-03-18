@@ -4,7 +4,18 @@ page {
 
     1584442976 = FLUIDTEMPLATE
     1584442976 {
-        templateName = Site-Default
+        templateName {
+            cObject = CASE
+            cObject {
+                key.field = doktype
+
+                default = TEXT
+                default {
+                    value.field = doktype
+                    wrap = |.html
+                }
+            }
+        }
 
         templateRootPaths {
             0 = {$extensions.site.paths.documentTypes.templateRootPath}
