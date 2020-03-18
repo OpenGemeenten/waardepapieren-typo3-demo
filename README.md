@@ -48,5 +48,8 @@ have finished, turn these settings OFF.
 #### Firefox
 * Install the extension `CORS everywhere` and turn it on
 
+#### Opera
+* Install the extension `CORS Toggle` and turn it on
+
 # License
 GPL-2.0 or later
