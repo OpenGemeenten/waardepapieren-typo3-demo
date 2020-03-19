@@ -1,0 +1,13 @@
+// Column definition for colPos=1
+lib.column.1 =< lib.column.default
+lib.column.1 {
+    10 {
+        maxImageWidthInText.cObject {
+            Default.value = 300
+        }
+        maxImageWidth.cObject {
+            Default.value = 908
+        }
+    }
+    20.select.where = colPos=1
+}

@@ -36,6 +36,13 @@ page {
                 // Document type 1: Standard
                 if.value := addToList(1)
             }
+
+            // Content column 1 (add specifically for document types)
+            column-1 =< lib.column.1
+            column-1 {
+                // Document type 1: Standard
+                if.value := addToList(1)
+            }
         }
     }
 }
