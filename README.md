@@ -25,9 +25,14 @@ Get going quickly with TYPO3 CMS.
 Because we are in a development phase, you might encounter some problems:
 
 ### Certificates
-The certificates for both webservers are currently self assigned. You need
-to make an exception for these certificates for both webservers in your
-browser.
+The certificates for both webservers are currently self assigned. You need to import the required CA into the browser
+and set it as trusted. For this installation import:
+- Build/ssl/fieldlabCA.pem
+
+If the import doesn't directly validate the https://localhost:8090. Open it in a private screen. 
+It will probably have been cached as invalid previously.
+Or add an exception in the browser if nothing else works :)
+
 
 ### Cross-Origin Resource Sharing (CORS)
 Cross-origin requests are made, but CORS has not been implemented yet.
