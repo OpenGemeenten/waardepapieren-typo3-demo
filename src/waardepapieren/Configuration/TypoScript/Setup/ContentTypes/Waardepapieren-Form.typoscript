@@ -13,4 +13,8 @@ tt_content.waardepapieren_form {
     layoutRootPaths {
         1584442976 = {$extensions.waardepapieren.paths.contentTypes.layoutRootPath}
     }
+
+    settings {
+        configuration = {$extensions.waardepapieren.paths.configuration}
+    }
 }

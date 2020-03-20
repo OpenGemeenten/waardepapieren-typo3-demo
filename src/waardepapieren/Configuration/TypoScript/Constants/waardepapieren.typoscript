@@ -7,5 +7,11 @@ extensions.waardepapieren {
 
             partialRootPath = EXT:waardepapieren/Resources/Private/Partials/ContentTypes/
         }
+
+        configuration = Configuration/clerk-frontend-config.json
     }
 }
+
+[page["uid"] == 2]
+    extensions.waardepapieren.paths.configuration = Configuration/clerk-frontend-config-hoorn.json
+[global]
